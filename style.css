@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    width: 90vmin;
+    max-width: 600px;
+    background: #1e1e2f;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .score-container {
+    height: 4rem;
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    color: #111;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
+  }
+  
+  
+  .game-container {
+    width: 100%;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(25, 1fr);
+    background: linear-gradient(145deg, #0a0a0a, #0d1b2a);
+    position: relative;
+    border: 2px solid #1f4068;
+    box-shadow:
+      inset 0 0 15px rgba(0, 136, 255, 0.2),
+      0 0 20px rgba(0, 136, 255, 0.1);
+    border-radius: 12px;
+  }
+  
+      
+  
+  /* Clean, flat food style */
+  .food {
+    background-color: #27ae60;
+    border-radius: 50%;
+  }
+  
+  /* Clean, flat snake style */
+  .snake {
+    background-color: #e74c3c;
+    border-radius: 4px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 500px) {
+    .score-container {
+      font-size: 1rem;
+      height: 3.5rem;
+    }
+  
+    .container {
+      width: 95vmin;
+    }
+  }
+  
+  
+  
+  
